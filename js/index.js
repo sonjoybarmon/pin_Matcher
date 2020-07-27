@@ -15,8 +15,8 @@ document.getElementById('generateSubmit').addEventListener('click', function(){
     const submitOutputError = document.getElementById('outputError');
         submitOutputError.style.display = 'block';
 
-        var tryCount = document.getElementById("tryCount");
-        var decrease = parseInt(tryCount.innerText)-1;
+        const tryCount = document.getElementById("tryCount");
+        let decrease = parseInt(tryCount.innerText)-1;
         tryCount.innerText = decrease;
         if(tryCount.innerText == 3){
             if(generateInput.value == generateOutput.value){
