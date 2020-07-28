@@ -37,7 +37,9 @@ document.getElementById('generateSubmit').addEventListener('click', function(){
             if(generateInput.value == generateOutput.value){
                 alert('❌ Please Try Again ')
                 tryCount.innerText= 0 + ' try left';
-            }            
+            }
+            document.getElementById('generate_input').value = ' ';
+            document.getElementById('generate_output').value = ' ';            
         }
     }
 
