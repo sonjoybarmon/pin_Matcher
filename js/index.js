@@ -9,6 +9,8 @@ document.getElementById('generateSubmit').addEventListener('click', function(){
     if(generateInput === generateOutput){
     const submitOutputDone = document.getElementById('outputDone');
         submitOutputDone.style.display = 'block';
+        document.getElementById('generate_input').value = ' ';
+        document.getElementById('generate_output').value = ' ';
     }
     
     if(generateInput !== generateOutput){
